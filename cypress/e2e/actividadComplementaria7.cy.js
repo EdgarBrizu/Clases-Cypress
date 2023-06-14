@@ -19,7 +19,6 @@ describe('Actividad complementaria 7', () => {
         cy.screenshot('foto a pantalla completa');
        //agregar 3 tareas y sacar una foto a la pantalla completa
    })
- 
     it("Deberia sacar una foto a las tres tareas", () =>{
     cy.contains('Tarea 1').screenshot('foto a to do list button');
     cy.contains('Tarea 2').screenshot('foto a to do list button');
