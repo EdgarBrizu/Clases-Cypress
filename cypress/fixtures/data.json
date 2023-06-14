@@ -1,0 +1,10 @@
+{
+    "tareas": {
+        "tarea1": "Tarea 1",
+        "tarea2": "Tarea 2"
+    },
+    "datosLogin": {
+        "usuario": "pushingit",
+        "contraseña": "123456!"
+    }
+}

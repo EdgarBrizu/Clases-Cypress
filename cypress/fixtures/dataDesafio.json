@@ -1,0 +1,9 @@
+{
+    "datosLogueo": {
+        "usuario": "brizu",
+        "contraseña": "123456!"
+    },
+    "errorMessage": {
+        "message": "Credentials were not found"
+    }
+}
