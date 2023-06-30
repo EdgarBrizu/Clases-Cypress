@@ -24,6 +24,12 @@ describe('Page object model', () => {
     })
 
     it('Ingresar 2 tareas', () => {
-        
+        toDoListPage.escribirTarea("tarea 1");
+        toDoListPage.clickSendButton();
+        toDoListPage.escribirTarea("tarea 2");
+        toDoListPage.clickSendButton();
+        toDoListPage.devolverTarea('tarea 1').should('have.attr', 'style', 'text-decoration: none;');
+        toDoListPage.completarTarea('tarea 1');
+        toDoListPage.devolverTarea('tarea 1').should('have.attr', 'style', 'text-decoration: line-through;');
     });
 });
