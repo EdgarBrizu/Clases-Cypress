@@ -1,0 +1,13 @@
+{
+    "datosLogueo": {
+        "usuario": "pushingit",
+        "contraseña": "123456!"
+    },
+    "tareas": {
+        "tarea1": "Primer Tarea",
+        "tarea2": "Segunda Tarea",
+        "tarea3": "Tercer Tarea",
+        "tarea4": "Cuarta Tarea",
+        "tarea5": "Quinta Tarea"
+    }
+}

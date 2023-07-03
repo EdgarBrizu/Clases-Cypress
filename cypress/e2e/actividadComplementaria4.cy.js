@@ -13,7 +13,7 @@ describe('Actividad complementaria 4', () => {
     let data;
     
     before('Acceso a datos', ()=> {
-        cy.fixture('dataDesafio').then(datos => {
+        cy.fixture('dataActComp4').then(datos => {
             data = datos;
         })
     })
