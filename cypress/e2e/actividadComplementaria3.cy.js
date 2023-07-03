@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 describe("Actividad complementaria 3", () =>{
 	// instalar la dependencia cypress-xpath
   // remplazar todos los selectores 'cssSelectors' por expresiones xpath
@@ -8,7 +9,7 @@ describe("Actividad complementaria 3", () =>{
         cy.xpath('//input[@name="user"]').type(`pushingit`);
         cy.xpath("//input[contains(@name,'pass')]").type('123456!');
         cy.xpath("//button[text()='Log in']").click()
-        cy.xpath("//a[contains(text(),'Do Li')]").click()
+        cy.xpath("//a[contains(text(),'Do Li')]", {timeout: 30000}).click()
         cy.xpath("//button[starts-with(@id,'sen')]").type("tarea 1")
         cy.xpath("//form//descendant::button[@id='sendTask']").click()
         cy.xpath('//button[text()="Delete"]//preceding-sibling::p').click()

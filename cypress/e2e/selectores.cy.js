@@ -11,8 +11,8 @@ describe('Selectores', () => {
         cy.get('input.password').should('exist');
         cy.get("input[class='chakra-input password css-1ekf6i8']").should('exist');
         cy.get('[name^="pass"]').should('exist') //el valor deberia de comenzar con cierto valor
-        cy.get('[name$="ame"]').should('exist') //el valor deberia de finalizar con cierto valor
-        cy.get('[name*="ss na"]').should('exist') //debe contener cierto valor
+        cy.get('[name$="ser"]').should('exist') //el valor deberia de finalizar con cierto valor
+        cy.get('[name*="as"]').should('exist') //debe contener cierto valor
         cy.get('[class*="password"]').should('exist')
     });
     

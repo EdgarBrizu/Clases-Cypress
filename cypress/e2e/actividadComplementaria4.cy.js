@@ -15,14 +15,14 @@ describe('Actividad complementaria 4', () => {
     before('Acceso a datos', ()=> {
         cy.fixture('dataActComp4').then(datos => {
             data = datos;
-        })
-    })
+        });
+    });
 
     beforeEach('Visita de página y Login', ()=>{
         cy.visit('')
         cy.get("#registertoggle").dblclick();
 
-    })
+    });
 
     it('Deberia validar un mensaje de error al colocar un usuario inexistente', () => {
         cy.get('#user').type(data.datosLogueo.usuario);

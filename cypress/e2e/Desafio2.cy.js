@@ -4,7 +4,7 @@ describe("Suite de pruebas para el módulo - To Do List", () => {
     let info;
 
     before('Aceso a datos', () =>{
-        cy.fixture('datos').then(datos => {
+        cy.fixture('datosDesafio2').then(datos => {
             info=datos;
         })
     })
